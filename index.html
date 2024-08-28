@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="alura__logo" src="assets/Logo.png" alt="Logo de Alura" />
+    </header>
+    <main>
+      <section>
+        <textarea
+          class="to__encrypt"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese su texto aquí"
+        ></textarea>
+        <h6 class="restriction__text">Solo letras minúsculas y sin acentos.</h6>
+        <div class="buttons">
+          <button class="button__encrypt" onclick="encryptText()">
+            Encriptar
+          </button>
+          <button class="button__decrypt" onclick="decryptText()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <aside>
+        <textarea class="output" cols="20" rows="10"></textarea>
+      </aside>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
